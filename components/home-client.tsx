@@ -498,6 +498,28 @@ export default function HomeClient() {
           </section>
         )}
 
+        {/* Success Stories Section */}
+        {data.successStories && data.successStories.length > 0 && (
+          <section className="bg-white py-20 border-y border-slate-200/50">
+            <div className="mx-auto max-w-6xl px-6">
+              <div className="text-center max-w-2xl mx-auto mb-16">
+                <span className="text-xs font-bold uppercase tracking-[0.2em]" style={{color: brand.green}}>Real Impact</span>
+                <h2 className="text-3xl font-extrabold mt-2" style={{color: brand.navy}}>Success Stories</h2>
+              </div>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {data.successStories.map((story, idx) => (
+                  <div key={idx} className="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                    <div className="h-10 w-10 shrink-0 rounded-full flex items-center justify-center bg-white shadow-sm">
+                      <Sparkles className="h-5 w-5" style={{color: brand.green}} />
+                    </div>
+                    <p className="text-slate-700 text-sm leading-relaxed font-medium pt-2">{story}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Testimonials (Client Voices) - Name and Location First */}
         <section id="testimonials" className="mx-auto max-w-6xl px-6 py-20">
           <div className="text-center max-w-2xl mx-auto mb-16">
