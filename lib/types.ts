@@ -13,6 +13,7 @@ export type SiteContent = {
   founderBio: unknown[]
   founderImage: unknown
   services: {title: string; description: string}[]
+  successStories?: string[]
   testimonials: {quote: string; author: string}[]
   packageAudiences: Audience[]
   customServices: CustomService[]
