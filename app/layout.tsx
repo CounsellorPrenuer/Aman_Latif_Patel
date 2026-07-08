@@ -1,12 +1,12 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
 export const metadata: Metadata = {
-  title: 'Samvaad | Meaningful Conversations, Lasting Change',
-  description: 'Counselling and career guidance by Gouri Phatak.',
+  title: 'SIMAN COUNSELLING',
+  description: 'Guiding Students Towards the Right Career Path.',
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -302,7 +302,7 @@ export default function HomeClient() {
           <div className="relative flex justify-center">
             <div className="absolute inset-0 bg-gradient-to-tr from-emerald-50 to-blue-50 rounded-3xl -rotate-3 scale-95 -z-10" />
             <Image 
-              src={withBase('/founder.png')} 
+              src={withBase('/founder.jpg')} 
               alt={data.founderName || 'Founder'} 
               width={450} 
               height={450} 
@@ -316,7 +316,7 @@ export default function HomeClient() {
           <div className="grid gap-12 rounded-3xl bg-white p-8 md:p-12 shadow-sm border border-slate-100 md:grid-cols-[300px_1fr]">
             <div className="flex flex-col items-center md:items-start gap-4">
               <Image 
-                src={withBase('/founder.png')} 
+                src={withBase('/founder.jpg')} 
                 alt={data.founderName || 'Founder'} 
                 width={300} 
                 height={350} 
@@ -329,7 +329,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em]" style={{color: brand.green}}>Meet Ms. Gouri Phatak</span>
+              <span className="text-xs font-bold uppercase tracking-[0.2em]" style={{color: brand.green}}>Meet {data.founderName || 'the Founder'}</span>
               <h2 className="mt-2 mb-6 text-3xl font-extrabold" style={{color: brand.navy}}>About Founder</h2>
               <div className="max-w-none text-slate-600 leading-relaxed font-normal">
                 {data.founderBio ? <PortableText value={data.founderBio as any} components={portableTextComponents} /> : null}
