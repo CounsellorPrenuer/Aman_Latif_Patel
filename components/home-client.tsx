@@ -223,6 +223,9 @@ export default function HomeClient() {
       coreValues: localContent.coreValues,
       whoShouldContact: localContent.whoShouldContact,
       sessionDetails: localContent.sessionDetails,
+      successStories: localContent.successStories,
+      packageAudiences: localContent.packageAudiences,
+      customServices: localContent.customServices,
     }
   }, [sanityData])
 
@@ -299,7 +302,7 @@ export default function HomeClient() {
           <div className="relative flex justify-center">
             <div className="absolute inset-0 bg-gradient-to-tr from-emerald-50 to-blue-50 rounded-3xl -rotate-3 scale-95 -z-10" />
             <Image 
-              src={withBase('/founder.jpeg')} 
+              src={withBase('/founder.png')} 
               alt={data.founderName || 'Founder'} 
               width={450} 
               height={450} 
@@ -313,7 +316,7 @@ export default function HomeClient() {
           <div className="grid gap-12 rounded-3xl bg-white p-8 md:p-12 shadow-sm border border-slate-100 md:grid-cols-[300px_1fr]">
             <div className="flex flex-col items-center md:items-start gap-4">
               <Image 
-                src={withBase('/founder.jpeg')} 
+                src={withBase('/founder.png')} 
                 alt={data.founderName || 'Founder'} 
                 width={300} 
                 height={350} 
