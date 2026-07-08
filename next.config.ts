@@ -1,7 +1,6 @@
-﻿import type { NextConfig } from "next";
+import type { NextConfig } from "next";
 
-const isGithubPages = process.env.GITHUB_ACTIONS === "true";
-const repoName = "Gouri_Phatak";
+const repoName = "Aman_Latif_Patel";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -15,12 +14,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  ...(isGithubPages
-    ? {
-        basePath: `/${repoName}`,
-        assetPrefix: `/${repoName}/`,
-      }
-    : {}),
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 };
 
 export default nextConfig;
