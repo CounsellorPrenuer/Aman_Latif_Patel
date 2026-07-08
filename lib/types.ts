@@ -1,7 +1,7 @@
-export type Feature = {text: string; included: boolean}
-export type Plan = {tier: string; name: string; price: string; features: Feature[]; buttonText: string}
-export type Audience = {label: string; leftPlan: Plan; rightPlan: Plan}
-export type CustomService = {title: string; price: string; description: string; icon: string; buttonText: string}
+export type Feature = { _type?: string;text: string; included: boolean}
+export type Plan = { _type?: string;tier: string; name: string; price: string; features: Feature[]; buttonText: string}
+export type Audience = { _type?: string;label: string; leftPlan: Plan; rightPlan: Plan}
+export type CustomService = { _type?: string;title: string; price: string; description: string; icon: string; buttonText: string}
 
 export type SiteContent = {
   brandName: string
